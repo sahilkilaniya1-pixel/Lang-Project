@@ -1,132 +1,171 @@
 <!doctype html>
-<html lang="en">
+<html lang="hi">
   <head>
     <meta charset="UTF-8" />
     <title>DevBook - Learn Coding</title>
   </head>
   <body>
+    <!-- ================= HEADER SECTION ================= -->
     <header>
-      <h1>DevBoook: Programmers ka Adda</h1>
+      <h1>🚀 DevBook: Programmers ka Adda</h1>
       <p>
         Bina kisi jhanjhat ke programming seekhein aur behtareen resources
         download karein.
       </p>
       <nav>
-        <a href="#courses">Cources</a>
-        <a href="#reviews">Students Review</a>
-        <a href="order">Order Form</a>
+        <a href="#courses">Courses</a> |
+        <a href="#reviews">Students Review</a> |
+        <a href="#order">Order Form</a>
       </nav>
     </header>
 
     <hr />
 
+    <!-- ================= MULTIMEDIA & INTRO ================= -->
     <main>
-      <section id="#intro">
-        <h2>Humaara Best Selling Cources: HTML5 MAstrey</h2>
+      <section id="intro">
+        <h2>Humaara Best Selling Course: HTML5 Mastery</h2>
         <p>
-          <strong>HTML5</strong>seekhne ke liye niche diye gaye video intro ko
-          dekhein
+          <strong>HTML5</strong> seekhne ke liye niche diye gaye video intro ko
+          dekhein:
         </p>
 
+        <!-- Video Tag: Auto controls aur width-height ke sath -->
         <video width="480" height="320" controls>
           <source
-            src="https://www.w3school.com/html/mov_bbb.mp4"
+            src="https://www.w3schools.com/html/mov_bbb.mp4"
             type="video/mp4"
           />
-          Apka browser video element support nhi karta hain.
+          Aapka browser video element support nahi karta hai.
         </video>
-        <p>Sath hi, humaara daily podcast suniye:</p>
 
+        <p>Sath hi, humaara daily podcast suniye:</p>
+        <!-- Audio Tag -->
         <audio controls>
           <source
             src="https://www.w3schools.com/html/horse.mp3"
             type="audio/mpeg"
           />
-          Apka browser audio support nhi karta hain.
+          Aapka browser audio support nahi karta hai.
         </audio>
       </section>
 
       <hr />
 
-      <section id="Cources">
-        <h2>Humare cource aur prices</h2>
-        <p>Niche hmne cource ki list aur unke charges diye hain:</p>
+      <!-- ================= COURSE LIST (LISTS & TABLES) ================= -->
+      <section id="courses">
+        <h2>Humaare Courses aur Prices</h2>
+        <p>Niche humne courses ki list aur unke charges diye hain:</p>
 
+        <!-- Table with Colspan & Rowspan -->
         <table border="1" cellpadding="10" cellspacing="0">
           <thead>
             <tr bgcolor="#e6f2ff">
-              <th>Cource Name</th>
-              <th>Duration</th>
-              <th>Price (Fee)</th>
+              <th>Course Name</th>
+              <th>Duration (Waqt)</th>
+              <th>Price (Fees)</th>
             </tr>
           </thead>
-          >
           <tbody>
             <tr>
               <td><strong>HTML5 Complete Guide</strong></td>
               <td>2 Weeks</td>
-              <td>$499</td>
+              <td>₹499</td>
             </tr>
             <tr>
-              <td><strong>CSS3 & Flexbox Layputs</strong></td>
+              <td><strong>CSS3 & Flexbox Layouts</strong></td>
               <td>3 Weeks</td>
-              <td>$599</td>
+              <td>₹599</td>
             </tr>
             <tr>
-              <td colspan="=2" align="center">
-                <strong>Combo Pack(HTML5 + CSS3)</strong>
+              <!-- Colspan used to merge cells horizontally -->
+              <td colspan="2" align="center">
+                <strong>Combo Pack (HTML5 + CSS3)</strong>
               </td>
-              <td><strong>$899</strong></td>
+              <td><strong>₹899</strong></td>
             </tr>
-
-            <section id="" order>
-              <h2>
-                Cource Order and Registration
-                <form></form>
-              </h2>
-              <p>Cource mein admission lene ke liye niche ka form bharein:</p>
-              <form action="#" method="POST" enctype="multipart/form-data">
-                <fieldset>
-                  <legend>Student Profile</legend>
-                  <br />
-                  <label for="studentname">Poora Naam:</label>
-                  <input
-                    type="text"
-                    id="studentname"
-                    name="sname"
-                    placeholder="Jaise: Rahul Sharma"
-                    required
-                  />
-                  <br /><br />
-
-                  <label for="studentemail">Email Address:</label>
-                  <input
-                    type="email"
-                    id="studentemail"
-                    name="semail"
-                    placeholder="rahul@example.com"
-                    required
-                  />
-                  <br /><br />
-
-                  <label for="startdate">Batch Joining Date:</label>
-                  <input type="date" id="startdate" name="sdate" required />
-                  <br /><br />
-                </fieldset>
-
-                <Br>
-
-                <fieldset>
-                    <legend>Order Details</legend>
-                    <br>
-                    <label for="selectcource">Apna Cource chunein:></label>
-                    <select></select>
-                </fieldset>
-              </form>
-            </section>
           </tbody>
         </table>
       </section>
+
+      <hr />
+
+      <!-- ================= ORDER & FILE UPLOAD FORM ================= -->
+      <section id="order">
+        <h2>📝 Course Order and Registration Form</h2>
+        <p>Course mein admission lene ke liye niche ka form bharein:</p>
+
+        <form action="#" method="POST" enctype="multipart/form-data">
+          <fieldset>
+            <legend>Student Profile</legend>
+            <br />
+            <label for="studentname">Poora Naam:</label>
+            <input
+              type="text"
+              id="studentname"
+              name="sname"
+              placeholder="Jaise: Rahul Sharma"
+              required
+            />
+            <br /><br />
+
+            <label for="studentemail">Email Address:</label>
+            <input
+              type="email"
+              id="studentemail"
+              name="semail"
+              placeholder="rahul@example.com"
+              required
+            />
+            <br /><br />
+
+            <label for="startdate">Batch Joining Date:</label>
+            <input type="date" id="startdate" name="sdate" required />
+            <br /><br />
+          </fieldset>
+
+          <br />
+
+          <fieldset>
+            <legend>Order Details</legend>
+            <br />
+            <label for="selectcourse">Apna Course Chunein:</label>
+            <select id="selectcourse" name="scourse">
+              <option value="html">HTML5 Complete Guide - ₹499</option>
+              <option value="css">CSS3 & Flexbox Layouts - ₹599</option>
+              <option value="combo">Combo Pack (Both) - ₹899</option>
+            </select>
+            <br /><br />
+
+            <!-- File Upload Option (Aapka homework challenge!) -->
+            <label for="idcard"
+              >Apna Student ID Card Upload karein (PDF/Image):</label
+            >
+            <input type="file" id="idcard" name="sid" required />
+            <br /><br />
+
+            <label for="comments">Extra Notes/Requirements:</label><br />
+            <textarea
+              id="comments"
+              name="snotes"
+              rows="4"
+              cols="50"
+              placeholder="Agar aapki koi special request ho toh likhein..."
+            ></textarea>
+          </fieldset>
+
+          <br />
+          <button type="submit">Order Confirm Karein</button>
+          <button type="reset">Sari Information Clean Karein</button>
+        </form>
+      </section>
     </main>
+
+    <hr />
+
+    <!-- ================= FOOTER SECTION ================= -->
+    <footer>
+      <p>© 2026 DevBook Store. Made with passion by a future Web Developer.</p>
+    </footer>
   </body>
 </html>
