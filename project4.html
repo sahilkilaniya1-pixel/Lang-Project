@@ -1,0 +1,321 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Desi Tadka Restaurant</title>
+    <!-- Bootstrap CSS CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- 1. NAVBAR (Sabse Upar) -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+      <div class="container">
+        <a class="navbar-brand fw-bold text-warning" href="#">Desi Tadka</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#special-dishes">Menu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#book-table">Book Table</a>
+            </li>
+          </ul>
+          <a href="#book-table" class="btn btn-warning ms-lg-3">Book A Table</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- 2. HERO SECTION (Navbar ke niche) -->
+    <header
+      id="home"
+      class="text-white text-center d-flex align-items-center"
+      style="
+        height: 75vh;
+        background:
+          linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+          url(&quot;https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=1200&quot;)
+            center/cover no-repeat fixed;
+      "
+    >
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-lg-6">
+            <span
+              class="text-warning text-uppercase fw-bold mb-2 d-inline-block"
+              style="letter-spacing: 2px"
+              >Welcome To Our Kitchen</span
+            >
+            <h1 class="display-3 fw-bold mb-3">
+              Zayde Ka Naya <span class="text-warning">Thikana</span>
+            </h1>
+            <p class="lead mb-4 text-light">
+              Experience the authentic taste of traditional spices cooked by
+              world-class chefs.
+            </p>
+            <div class="d-flex justify-content-center gap-3">
+              <a
+                href="#special-dishes"
+                class="btn btn-warning btn-lg px-4 py-2 fw-bold shadow-sm rounded-pill"
+                >Explore Menu</a
+              >
+              <a
+                href="#book-table"
+                class="btn btn-outline-light btn-lg px-4 py-2 rounded-pill"
+                >Book A Table</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- 3. SPECIAL DISHES CARDS (Hero ke niche) -->
+    <section id="special-dishes" class="py-5 bg-light">
+      <div class="container">
+        <div class="text-center mb-5">
+          <span
+            class="text-warning fw-bold text-uppercase"
+            style="letter-spacing: 2px; font-size: 0.9rem"
+            >Chef's Choice</span
+          >
+          <h2 class="fw-bold display-5 mt-1">Our Special Dishes</h2>
+          <div
+            class="mx-auto bg-warning"
+            style="width: 60px; height: 3px; border-radius: 2px"
+          ></div>
+        </div>
+        <div class="row g-4 justify-content-center">
+          <!-- Dish 1 -->
+          <div class="col-sm-10 col-md-6 col-lg-4">
+            <div
+              class="card h-100 border-0 shadow-sm overflow-hidden"
+              style="border-radius: 15px"
+            >
+              <div class="position-relative">
+                <img
+                  src="https://images.unsplash.com/photo-1601050690597-df056fb4ce78?q=80&w=500"
+                  class="card-img-top"
+                  alt="Samosa"
+                  style="height: 240px; object-fit: cover"
+                />
+                <span
+                  class="position-absolute top-0 end-0 bg-warning text-dark fw-bold px-3 py-1 m-3 rounded-pill"
+                  >₹50</span
+                >
+              </div>
+              <div class="card-body p-4 d-flex flex-column">
+                <h5 class="card-title fw-bold text-dark mb-2">
+                  Crispy Golden Samosa
+                </h5>
+                <p class="card-text text-muted flex-grow-1">
+                  Traditional flaky pastry stuffed with perfectly spiced
+                  potatoes, served with tangy mint chutney.
+                </p>
+                <div
+                  class="d-flex justify-content-between align-items-center mt-3 pt-3 border-top"
+                >
+                  <button class="btn btn-dark btn-sm rounded-pill px-3 w-100">
+                    Order Now
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Dish 2 -->
+          <div class="col-sm-10 col-md-6 col-lg-4">
+            <div
+              class="card h-100 border-0 shadow-sm overflow-hidden"
+              style="border-radius: 15px"
+            >
+              <div class="position-relative">
+                <img
+                  src="https://images.unsplash.com/photo-1565557623262-b51c2513a641?q=80&w=500"
+                  class="card-img-top"
+                  alt="Paneer Tikka"
+                  style="height: 240px; object-fit: cover"
+                />
+                <span
+                  class="position-absolute top-0 end-0 bg-warning text-dark fw-bold px-3 py-1 m-3 rounded-pill"
+                  >₹220</span
+                >
+              </div>
+              <div class="card-body p-4 d-flex flex-column">
+                <h5 class="card-title fw-bold text-dark mb-2">
+                  Smoky Paneer Tikka
+                </h5>
+                <p class="card-text text-muted flex-grow-1">
+                  Fresh cottage cheese cubes marinated in yogurt and rich
+                  tandoori spices, chargrilled.
+                </p>
+                <div
+                  class="d-flex justify-content-between align-items-center mt-3 pt-3 border-top"
+                >
+                  <button class="btn btn-dark btn-sm rounded-pill px-3 w-100">
+                    Order Now
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Dish 3 -->
+          <div class="col-sm-10 col-md-6 col-lg-4">
+            <div
+              class="card h-100 border-0 shadow-sm overflow-hidden"
+              style="border-radius: 15px"
+            >
+              <div class="position-relative">
+                <img
+                  src="https://images.unsplash.com/photo-1633945274405-b6c8069047b0?q=80&w=500"
+                  class="card-img-top"
+                  alt="Butter Chicken"
+                  style="height: 240px; object-fit: cover"
+                />
+                <span
+                  class="position-absolute top-0 end-0 bg-warning text-dark fw-bold px-3 py-1 m-3 rounded-pill"
+                  >₹340</span
+                >
+              </div>
+              <div class="card-body p-4 d-flex flex-column">
+                <h5 class="card-title fw-bold text-dark mb-2">
+                  Special Butter Chicken
+                </h5>
+                <p class="card-text text-muted flex-grow-1">
+                  Tender boneless chicken pieces cooked in a velvety, buttery
+                  tomato-based gravy.
+                </p>
+                <div
+                  class="d-flex justify-content-between align-items-center mt-3 pt-3 border-top"
+                >
+                  <button class="btn btn-dark btn-sm rounded-pill px-3 w-100">
+                    Order Now
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. 👇 YAHAN PASTE HUA HAI NEW BOOKING FORM (Menu ke niche) 👇 -->
+    <section id="book-table" class="py-5 bg-white">
+      <div class="container">
+        <div class="text-center mb-5">
+          <span
+            class="text-warning fw-bold text-uppercase"
+            style="letter-spacing: 2px; font-size: 0.9rem"
+            >Reservation</span
+          >
+          <h2 class="fw-bold display-5 mt-1">Book A Table</h2>
+          <div
+            class="mx-auto bg-warning"
+            style="width: 60px; height: 3px; border-radius: 2px"
+          ></div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div
+              class="card border-0 shadow p-4 p-md-5"
+              style="border-radius: 20px; background-color: #fcfcfc"
+            >
+              <form action="#" method="POST">
+                <div class="row g-4">
+                  <div class="col-md-6">
+                    <label class="form-label fw-semibold text-dark"
+                      >Full Name</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control form-control-lg border-0 shadow-sm"
+                      placeholder="Enter your name"
+                      style="border-radius: 10px; background-color: #f1f3f5"
+                      required
+                    />
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-label fw-semibold text-dark"
+                      >Phone Number</label
+                    >
+                    <input
+                      type="tel"
+                      class="form-control form-control-lg border-0 shadow-sm"
+                      placeholder="Enter mobile number"
+                      style="border-radius: 10px; background-color: #f1f3f5"
+                      required
+                    />
+                  </div>
+                  <div class="col-md-4">
+                    <label class="form-label fw-semibold text-dark">Date</label>
+                    <input
+                      type="date"
+                      class="form-control form-control-lg border-0 shadow-sm"
+                      style="border-radius: 10px; background-color: #f1f3f5"
+                      required
+                    />
+                  </div>
+                  <div class="col-md-4">
+                    <label class="form-label fw-semibold text-dark"
+                      >Time Slot</label
+                    >
+                    <select
+                      class="form-select form-select-lg border-0 shadow-sm"
+                      style="border-radius: 10px; background-color: #f1f3f5"
+                      required
+                    >
+                      <option value="" selected disabled>Select Time</option>
+                      <option>12:00 PM - 02:00 PM</option>
+                      <option>07:00 PM - 09:00 PM</option>
+                    </select>
+                  </div>
+                  <div class="col-md-4">
+                    <label class="form-label fw-semibold text-dark"
+                      >Number of Guests</label
+                    >
+                    <select
+                      class="form-select form-select-lg border-0 shadow-sm"
+                      style="border-radius: 10px; background-color: #f1f3f5"
+                      required
+                    >
+                      <option value="" selected disabled>Select Guests</option>
+                      <option>1 Person</option>
+                      <option>2 People</option>
+                      <option>3-4 People</option>
+                      <option>5+ People</option>
+                    </select>
+                  </div>
+                  <div class="col-12 text-center mt-4">
+                    <button
+                      type="submit"
+                      class="btn btn-warning btn-lg px-5 py-3 fw-bold shadow-sm rounded-pill w-100 w-md-auto"
+                    >
+                      Confirm My Reservation
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- 👆 RESERVATION SECTION END 👆 -->
+
+    <!-- Bootstrap JS Bundle (Sabse Aakhiri Line) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
