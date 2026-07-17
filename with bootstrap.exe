@@ -19,3 +19,18 @@ Ek standard responsive HTML landing page ke liye aapko ye dynamic structural lay
 ---
 
 ## 2. Detailed Section Analysis & Bootstrap Utility Mapping
+
+| Section Name | Kyun Banaya? (Purpose) | Kahaan Se Liya Aur Kya Kaam Karega? |
+| :--- | :--- | :--- |
+| **Navigation (`<nav>`)** | Taaki website header look de aur links par click karke direct target section par screen smoothly scroll ho sake. | Bootstrap Components -> Navbar se base uthaya. `.sticky-top` class ka use kiya taaki page scroll karne par navbar top par freeze rahe. `.shadow-sm` se clean layer separation milti hai. |
+| **Hero Banner** | User engagement badhane ke liye page loading par solid visual impact create karta hai. | Bootstrap Grid System & Utilities se custom setup kiya. Left side par `.col-lg-6` text handling ke liye aur right side par `.col-lg-6` ke andar `.img-fluid` responsive image scale ke liye diya hai. |
+| **Stats Tracker Bar** | Yeh business conversion parameters ko enhance karta hai aur conversion rate badhata hai. | Isme Bootstrap Flex/Grid Mix custom likha hai. Background par primary rang (`.bg-primary`) aur spacing ke liye `.py-4` ka use kiya hai. Mobile par automatic `.col-6` ke format mein split ho jata hai. |
+| **Core Services** | Main primary packages ko grid mein clean display karta hai. | Bootstrap Components -> Cards ka base lekar uske inline structure ko update kiya. Border delete karne ke liye `.border-0` use kiya hai aur buttons ko consistent vertically alignment ke liye `.mt-auto` ka use kiya hai. |
+| **Dynamic Portfolio** | 12 elements ke hard static codes se DOM ko block hone se bachane aur modern data binding implement karne ke liye. | Bootstrap Grid Breakpoints + Vanilla JavaScript mix kiya hai. `col-12 col-sm-6 col-md-4 col-xl-3` diya hai, jiska matlab hai: desktop par 4 items per row, tablet par 3 items, small table/landscape mobile par 2, aur standard mobile par 1 product per line dikhega. |
+| **Pricing Section** | Plan configurations aur conversion ratios display karne ke liye. | Bootstrap Cards & Badges uthaye hain. Active card par alert generate karne ke liye `.border-primary` aur absolute position `.position-absolute` ke sath badge alignment use kiya hai. |
+| **Contact Form Section** | User input dynamic input handle karne ke liye validation setup deta hai. | Bootstrap Forms control architecture use kiya hai. `.form-control` input tag par automatic blue focus transitions apply karta hai aur `.form-select` drop down systems custom coordinate karta hai. |
+
+---
+
+### 💡 Development Practice Tip
+> **Note:** Jab aap is code ko local computer par open karenge, tab check karein ki Inspect Element (`F12`) dabakar toggle device utility se responsive structure properly collapse ho raha hai ya nahi. Saara content, typography aur layout bina single line custom style setup likhe fluid flow karega!
